@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body{
+
+  background-color: #c3e8e2;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: 'Patrick Hand', cursive;
+  color:#5f736f;
+  
+}
+
+button {
+
+  color: rgb(233, 227, 227);
+  font-weight: bold;
+
+}
+
+button:hover {
+
+  background-color: #99ffdd;
+  border-color: #99ffdd;
+  color: #004d4d; 
+  font-weight: bold; 
+
+}
+
+button:active {
+
+  transform: scale(0.98);
+            /* Scaling button to 0.98 to its original size */
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            /* Lowering the shadow */
+
+
+}
+
+input { 
+
+  text-align: right;
+  width: 100%; 
+
+}
+
+
+input:focus{
+  outline-color: #54d8c2;
+}
+
+.number-of-people i {
+
+  position: absolute;
+  padding: 17px;
+
+}
+
+
+.header {
+  letter-spacing: 5px;
+  font-family: Yaldevi;
+  top: 35%;
+  display: grid;
+  position: relative;
+  grid-template-columns: auto;
+  text-align: center;
+  padding: 10px !important;
+  margin-top: 7.5%;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-row-gap: 50px;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));  /* 2 div same width */
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 35px;
+  font-size: 30px;
+  
+}
+
+.main {
+
+  background-color: #ffffff !important;
+  border-radius: 15px;
+  margin-top: 5%;
+  
+}
+
+.one {
+
+  background-color: white;
+  border-radius: 15px;
+  grid-template-columns: auto;
+  box-sizing: border-box;
+  
+}
+
+.two {
+
+  background-color: #004d4d;
+  border-radius: 15px;
+  grid-template-columns: auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  
+  
+}
+
+.bill {
+
+  display: grid;
+  font-size: 15px;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+
+  
+
+}
+
+.bill i {
+
+  position: absolute;
+  padding: 17px;
+
+}
+
+.select-tip {
+  display: grid;
+  grid-template-columns: auto;
+  font-size: 15px;
+}
+
+.discount-main{
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  
+}
+
+.discount-type1 {
+  border:  solid ;
+  border-radius: 5px;
+  border-color: #004d4d;
+  background-color: #004d4d;
+  color: rgb(228, 226, 226);
+  text-align: center;
+  padding: 10px;
+}
+
+.discount-type2 {
+
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: white;
+  text-align: center;
+  padding: 10px;
+  color: #5f736f;
+
+}
+
+.discount-type3 {
+  border:  solid ;
+  border-radius: 5px;
+  outline-color: white;
+  background-color: #e4fafa;
+  color: rgb(228, 226, 226);
+  text-align: right;
+}
+
+.number-of-people {
+
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+ 
+}
+
+.text-rule {
+
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
+
+#currency-field {
+
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 27px;
+  background-color: #e4fafa;
+  padding: 7px;
+  font-family: 'Patrick Hand', cursive;
+  color: #004d4d;
+
+}
+
+#people-field {
+
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #e4fafa;
+  font-size: 27px;
+  padding: 7px;
+  font-family: 'Patrick Hand', cursive;
+  color: #004d4d;
+
+}
+
+.tip-amount {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /*padding-left: 10px;*/
+    margin: 0px;
+
+}
+
+.total-amount {
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+ /*padding-left: 10px;*/
+  margin: 0px;
+  
+}
+
+
+#red {
+  text-align:right; 
+  font-size: 16px; 
+  color: white
+}
+
+
+#reset{
+
+  border-radius: 5px;
+  margin-top: 8%;
+ 
+  color: black;
+  font-weight: bold;
+  background-color: #00b38f;
+  border-color: #00b38f; 
+
+}
+
+#reset:hover{
+  background-color: #99ffdd;
+  border-color: #99ffdd;
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .grid-container{
+
+  grid-template-columns: auto;
+
+}
+  
+}
