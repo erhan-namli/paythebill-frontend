@@ -209,6 +209,18 @@ input:focus{
 
 }
 
+#custom-input-field {
+
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 27px;
+  background-color: #e4fafa;
+  padding: 7px;
+  font-family: 'Patrick Hand', cursive;
+  color: #004d4d;
+
+}
+
 #people-field {
 
   border: 2px solid white;
