@@ -112,12 +112,10 @@ var reset = function(evt){
   var resetButton = document.getElementById("reset");
 
   var customInput = document.getElementById("custom-input-field");
-
  
 
 
 /* EVENT LISTENER */
-
 
  
   five.addEventListener("click", buttonFunction, false);
